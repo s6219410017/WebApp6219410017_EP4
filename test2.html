@@ -13,24 +13,23 @@
 </head>
 <body>
     <h1>-- Form Tag --</h1>
-    <h2>ลงทะเบียนพนักงาน</h2>
-    <form action="#" method="GET/POST" enctype="multipart/form-data">
-        ชื่อ <input type="text" name="emp_name" id="">
-        <br><br>
-        ปีเกิด <input type="number" name="emp_byear" id="">
-        <br><br>
-        รหัสผ่าน <input type="password" name="emp_pwd" id="">
-        <br><br>
-        วัน เดือน ปีเกิด <input type="date" name="emp_bday" id="">
-        <br><br>
-        วัน เวลา ทำงาน <input type="datetime-local" name="">
-        <br><br>
-        เวลาเกิด <input type="time" name="emp_btime" id="">
-        <br><br>
-        เพศ
-        <input type="radio" name="emp_sex" id="" value="m">ชาย
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            ชื่อ <input type="text" name="emp_name" id="">
+            <br><br>
+            ปีเกิด <input type="number" name="emp_byear" id="">
+            <br><br>
+            รหัสผ่าน <input type="password" name="emp_pwd" id="">
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลทั่วไป</legend>
+            เพศ
+            <input type="radio" name="emp_sex" id="" value="m">ชาย
         <input type="radio" name="emp_sex" id="" value="f">หญิง
         <input type="radio" name="emp_sex" id=""  checked value="999">ทางเลือก
+        <br><br>
         <br><br>
         การศึกษาสูงสุด
         <select name="emp_educate" id="">
@@ -77,6 +76,8 @@
         <input type="reset" value="ยกเลิก">
         <button>บันทึก Save</button>
         <button>ยกเลิก ไม่เอา cancel</button>
+        </fieldset>
+        
     </form>
 </body>
 </html>
